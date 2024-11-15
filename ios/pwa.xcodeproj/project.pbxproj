@@ -6,12 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		034EED562CE76FF800CEE702 /* build in Resources */ = {isa = PBXBuildFile; fileRef = 034EED552CE76FF800CEE702 /* build */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		034EEC942CE74B1700CEE702 /* pwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = pwa.app; path = "/Users/clintonpage/Desktop/mygit/pwa/ios/build/Debug-iphoneos/pwa.app"; sourceTree = "<absolute>"; };
+		034EECFB2CE76BA600CEE702 /* pwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = pwa.app; path = "/Users/clintonpage/Desktop/mygit/pwa/ios/build/Debug-iphoneos/pwa.app"; sourceTree = "<absolute>"; };
+		034EED552CE76FF800CEE702 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = "../test/my-app/build"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		034EEC8A2CE7498200CEE702 /* pwa */ = {
+		034EED362CE76CF800CEE702 /* pwa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = pwa;
 			sourceTree = "<group>";
@@ -32,7 +37,8 @@
 		034EEC3C2CE744A300CEE702 = {
 			isa = PBXGroup;
 			children = (
-				034EEC8A2CE7498200CEE702 /* pwa */,
+				034EED552CE76FF800CEE702 /* build */,
+				034EED362CE76CF800CEE702 /* pwa */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +58,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				034EEC8A2CE7498200CEE702 /* pwa */,
+				034EED362CE76CF800CEE702 /* pwa */,
 			);
 			name = pwa;
 			packageProductDependencies = (
 			);
 			productName = pwa;
-			productReference = 034EEC942CE74B1700CEE702 /* pwa.app */;
+			productReference = 034EECFB2CE76BA600CEE702 /* pwa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +106,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034EED562CE76FF800CEE702 /* build in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
