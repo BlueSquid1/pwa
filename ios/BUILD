@@ -28,6 +28,6 @@ apple_resource_group(
     name = "wwwResource",
     structured_resources = [
       "www/index.html",
-      "www/index.js",
+      "www/bundle.js",
     ],
 )

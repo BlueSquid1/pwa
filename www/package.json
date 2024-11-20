@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "prebuild": "npm install",
-    "_compile": "webpack --config ./webpack.config.js --mode=development",
-    "compile": "webpack --config ./webpack.config.js --mode=production",
+    "compile": "webpack --config ./webpack.config.js --mode=development",
+    "_compile": "webpack --config ./webpack.config.js --mode=production",
     "postbuild": "",
     "build": "npm run prebuild ; npm run compile ; npm run postbuild"
   },

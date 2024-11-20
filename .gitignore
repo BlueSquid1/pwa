@@ -91,3 +91,15 @@ Temporary Items
 node_modules/
 dist/
 tsconfig.tsbuildinfo
+
+/MODULE.bazel.lock
+bazel-*
+.idea
+/tests/ios/Index/
+/tests/macos/Index/
+/tests/index-import.pid
+user.bazelrc
+external
+index-import.runfiles
+MODULE.bazel
+MODULE.bazel.lock
