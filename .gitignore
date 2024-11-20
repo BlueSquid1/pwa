@@ -90,3 +90,4 @@ Temporary Items
 
 node_modules/
 dist/
+tsconfig.tsbuildinfo
