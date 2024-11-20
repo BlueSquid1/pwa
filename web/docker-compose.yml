@@ -1,8 +1,0 @@
-services:
-  pwa-web:
-    build:
-      context: .
-    container_name: pwa-web
-    network_mode: host
-    volumes:
-      - ./:/workspace
