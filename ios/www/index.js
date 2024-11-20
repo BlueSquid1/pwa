@@ -1,1 +1,1 @@
-document.getElementById("demo").innerHTML = 6 + 6;
+document.getElementById("demo").innerHTML = 6 + 1;

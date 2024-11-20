@@ -1,10 +1,6 @@
 load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
-
-swift_library(
-    name = "lib",
-    srcs = glob(["Sources/*.swift"]),
-)
+load("@build_bazel_rules_apple//apple:resources.bzl", "apple_resource_group")
 
 ios_application(
     name = "iOSApp",
@@ -14,10 +10,24 @@ ios_application(
         "ipad",
     ],
     infoplists = ["Resources/Info.plist"],
-    minimum_os_version = "17.0",
+    minimum_os_version = "18.1",
     visibility = ["//visibility:public"],
-    deps = [":lib"],
-    resources = [
-        "www",
+    deps = [":swiftLibrary", ":wwwLibrary"],
+)
+
+swift_library(
+    name = "swiftLibrary",
+    srcs = glob(["Sources/*.swift"]),
+)
+
+objc_library(
+    name = "wwwLibrary",
+    data = [":wwwResource"],
+)
+apple_resource_group(
+    name = "wwwResource",
+    structured_resources = [
+      "www/index.html",
+      "www/index.js",
     ],
 )
