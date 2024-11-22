@@ -92,8 +92,6 @@ node_modules/
 dist/
 tsconfig.tsbuildinfo
 
-/MODULE.bazel.lock
-bazel-*
 .idea
 /tests/ios/Index/
 /tests/macos/Index/
@@ -101,5 +99,14 @@ bazel-*
 user.bazelrc
 external
 index-import.runfiles
-MODULE.bazel
-MODULE.bazel.lock
+
+
+
+bazel.iml
+# Ignore all bazel-* symlinks. There is no full list since this can change
+# based on the name of the directory bazel is cloned into.
+bazel-*
+# Bazelisk version file
+.bazelversion
+# User-specific .bazelrc
+user.bazelrc

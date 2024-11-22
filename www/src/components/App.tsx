@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
