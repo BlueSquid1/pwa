@@ -110,3 +110,4 @@ bazel-*
 .bazelversion
 # User-specific .bazelrc
 user.bazelrc
+ios/archive/

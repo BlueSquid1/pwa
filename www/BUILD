@@ -37,11 +37,27 @@ pkg_files(
     srcs = [
         ":generate_html",
     ],
+    visibility = ["//visibility:public"],
+)
+
+pkg_files(
+    name = "metadata_files",
+    srcs = [
+        "MODULE.bazel",
+        "//export:BUILD",
+    ],
+    visibility = ["//visibility:public"],
 )
 
 pkg_tar(
     name = "tar_html",
     srcs = [
         ":package_html",
+        ":metadata_files",
     ],
+    extension = "tar.gz",
+    mode = "0444",
+    owner = "0.0",
+    package_dir = ".",
+    strip_prefix = ".",
 )

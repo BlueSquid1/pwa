@@ -13,7 +13,7 @@ struct WebView: UIViewRepresentable {
         let webView = WKWebView()
 
         // Load the local HTML file from the "www" folder
-        if let localURL = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "www") {
+        if let localURL = Bundle.main.url(forResource: "index", withExtension: "html") {
             webView.loadFileURL(localURL, allowingReadAccessTo: localURL.deletingLastPathComponent())
         } else {
             print("Failed to load index.html from www folder.")
