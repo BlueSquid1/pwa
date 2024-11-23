@@ -1,8 +1,8 @@
 module(name = "www", version = "0.0.1")
 
-bazel_dep(name = "rules_pkg", version = "1.0.1")
-bazel_dep(name = "aspect_rules_js", version = "2.1.0")
-bazel_dep(name = "rules_nodejs", version = "6.3.0")
+bazel_dep(name = "rules_pkg", version = "1.0.1", dev_dependency = True)
+bazel_dep(name = "aspect_rules_js", version = "2.1.0", dev_dependency = True)
+bazel_dep(name = "rules_nodejs", version = "6.3.0", dev_dependency = True)
 
 node = use_extension("@rules_nodejs//nodejs:extensions.bzl", "node", dev_dependency = True)
 node.toolchain(node_version = "16.14.2")
@@ -18,6 +18,6 @@ npm.npm_translate_lock(
 
 use_repo(npm, "npm")
 
-pnpm = use_extension("@aspect_rules_js//npm:extensions.bzl", "pnpm")
+pnpm = use_extension("@aspect_rules_js//npm:extensions.bzl", "pnpm", dev_dependency = True)
 
 use_repo(pnpm, "pnpm")

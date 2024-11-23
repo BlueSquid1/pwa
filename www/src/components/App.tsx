@@ -11,8 +11,8 @@ function App() {
         noValidate
         autoComplete="off"
       >
-        <TextField id="standard-basic" label="Username8888" />
-        <TextField id="standard-basic" type="password" label="Password" variant="filled" />
+        <TextField id="outlined-required" label="Username" sx={{ label: { color: 'white' }, input: { color: 'white' } }} />
+        <TextField id="outlined-required" label="Password" type="password" variant="filled" sx={{ label: { color: 'white' }, input: { color: 'white' } }} />
         
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
